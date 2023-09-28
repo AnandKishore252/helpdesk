@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Helpdesk Test Suite" verbose="1">
+
+
+	<listeners>
+		<listener
+			class-name="happyfox.helpdesk_automation.listener.TestListener" />
+		<listener
+			class-name="happyfox.helpdesk_automation.listener.AnnotationTransfer" />
+	</listeners>
+
+	<test name="Happyfox Helpdesk Automation Test One">
+
+		<groups>
+			<run>
+				<include name="scenario one" />
+				<include name="scenario three" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="happyfox.helpdesk_automation.suites.HelpdeskTest">
+
+			</class>
+		</classes>
+	</test>
+
+	<test name="Happyfox Helpdesk Automation Test Two">
+
+		<groups>
+			<run>
+				<include name="scenario one" />
+				<include name="scenario two" />
+				<include name="scenario three" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="happyfox.helpdesk_automation.suites.HelpdeskTest">
+
+			</class>
+		</classes>
+	</test>
+
+</suite>
